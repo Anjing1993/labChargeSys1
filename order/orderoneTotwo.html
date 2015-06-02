@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>预约主页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/base.css" rel="stylesheet">
+<link href="../css/order.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/pop.js"></script>
+<script type="text/javascript">
+    function showInro(obj){
+        alert(obj.value);
+        var oDiv=document.getElementById('classroomInro');
+        var aDiv=oDiv.getElementsByTagName('div');
+        var txt=obj.value;
+        for(var i=0;i<txt;i++){
+           aDiv[i].style.display="none";
+        }
+        aDiv[txt-1].style.display="block";
+    }
+</script>
+</head>
+<body>
+    <div id="pop" ></div>
+    <div id="headPic">
+    	<img id="titimg" src="../images/headpic.png">
+    </div>
+    <!-----------------顶部导航栏------------------>
+    <div id="nav">
+    	<ul class="tit">
+    		<li><a href="##">退出</a></li>
+    		<li><a href="../manager/manager.html">个人中心</a></li>
+    		<li><a href="../index.html">首页</a></li>
+    	</ul>
+    </div>
+    <!---------------------内容部分---------------------->
+    	<div id="content">
+            <form id="form1">
+                <div>
+                    <span>第</span>
+                    <input type="text" />
+                    <span>周</span>
+                </div>
+                <div>
+                    <span>星期</span>
+                    <input type="text" />
+                    
+                </div>
+                 <div>
+                    <span>实验室类型</span>
+                    <select onchange="showInro(this)">
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <input id="btn" type="button" value="搜索" />
+                </div>
+            </form>
+            <div id="classroomMess">
+                <p onclick="popAllow(this)" class="empty" id="empty">b102</p>
+                <p onclick="popNotAllow()"  class="occupy" id="occupy">b104</p>
+                <p onclick="popAllow(this)"  class="empty" id="empty">b103</p>
+                <p class="empty" id="empty">b103</p>
+                <p onclick="popNotAllow()" class="occupy" id="occupy">b104</p>
+               
+
+            </div>
+            <div id="classroomInro">
+                <div>电子信息工程系下设三个实验室，分别为：电子信息工程实验室、图像处理与GPU实验室（中省共建实验室）和微波实验室（省部共建实验室）。电子信息工程系现有实验室面积约1000平方米，实验仪器设备价值600多万元，目前有200多万的教学仪器设备及实训设备正在筹备。 </div>
+                <div style="display:none">集成电路专业一贯重视教学和科研平台建设，在原信息产业部、陕西省以及学校的大力支持，先后投入2000余万元建设了专用集成电路设计中心（信息产业部重点实验室）、陕西省通信专用集成电路设计工程技术研究中心（陕西省13115工程技术研究中心）、计算机与微电子学实验教学示范中心（陕西省实验教学示范中心）和陕西省网络与信息安全技术支持中心等4个省部级重点实验室和工程研究中心。本学科还先后与美国Intel公司、Altera公司、Xilinx公司合作成立了英特尔多核技术实验室、片上可编程系统（SoPC）联合实验室、FPGA联合实验室。</div>
+                
+            </div>
+        </div>
+         <form>
+                    <div id="notAllow">
+                        <p>当前教室已经被预定!</p>
+                        <p>点击确定重新选择...</p>
+                        <p><input type="button" value="确定" onclick="hidePop()"/></p>
+                    </div>
+                 </form>
+                 <form>
+                    <div id="Allow">
+                        <p>您选择的座位是：<span></span></p>
+                        <p>预约时间：<span></span></p>
+                        <p>此教室可容纳：<span>123人</span></p>
+                        <p><input type="button" value="确定" onclick="hide()"/></p>
+                    </div>
+                 </form>
+</body>
+
+
+</html>

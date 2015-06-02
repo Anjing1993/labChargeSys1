@@ -1,0 +1,55 @@
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-23 20:08:19
+ * @version $Id$
+ */
+html,body,div,ul,li,p{padding:0;margin:0;font-size:12px;}
+ul li{list-style: none;}
+input{border:none;border:1px solid #d8d8d8;border-radius:5px;}
+ul li a,ul li a:link{color:#3c3c3c;text-decoration: none;}
+#headPic{width:1024px;margin:10px auto;}
+
+#loginCon{width:1024px;margin:0 auto;position:relative;}
+#loginCon img{border-radius: 8px;}
+#loginCon .login{position:absolute;top:20px;left:62%;}
+#loginform{font-family: 楷体;color:#515764;width:280px;position:absolute;top:80px;left:65%;height:190px;}
+.txtControl{width:100%;height:25px;margin-bottom: 15px;}
+.txtControl .txt{width:25%;height:25px;line-height:25px;float:left;}
+.txtControl .txt span{width:100%;font-size: 18px;}
+.txtControl .txtInput{width:75%;height:25px;line-height:25px;float: left;}
+.txtControl .txtInput select,.txtControl .txtInput input{font-family: 楷体;color:#515764;font-size:14px;width:100%;height:25px;}
+.loginBtn{width:100%;height:25px;margin-top: 30px;text-align: center;}
+.loginBtn input{text-align:center;letter-spacing:8px;width:120px;height:30px;line-height:30px;background: #112663;color:white;font-size: 14px;}
+.error{display:block;margin:20px 0 0 20px;color:red;}
+#newsTit{width:1024px;margin: 0 auto;}
+#newsTit p{width:50%;float:left;height:30px;line-height:30px;border-bottom:1px solid #5A5A5A;}
+#newsTit p span{font-weight:bold;color:#112663;display: block;width:80px;text-align:center;}
+#passage{float:right;}
+#news{width:1024px;height:auto;margin: 0 auto;overflow: hidden;min-height: 300px;}
+#news .newsL,#news .newsR{width:50%;float:left;overflow:auto;height:100px;margin-bottom: -90000px;padding-bottom:90000px;}
+#news .newsL ul,#news .newsR ul {width:100%;margin:0 0 0 10px;overflow:hidden;}
+#news .newsL ul  li,#news .newsR ul  li{font-size:12px;width:100%;overflow: hidden;height:25px;line-height:25px;}
+#news .newsL ul  li img,#news .newsR ul  li img{width:13px;height:13px;margin-right:5px;}
+
+/*** order condetail**/
+#conDetail{width:819px;float:right;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conDetail table {width:100%;}
+#conDetail table thead tr th{width:136px;height:30px;line-height:30px;border:1px solid #eee;font-size: 14px; color: #404040; background: #eaeaea; }
+#conDetail table tbody tr td{text-align:center;width:136px;height:30px;line-height:30px;color: #404040;font-size: 14px;background:white;}
+
+/**********repair conDetail*************/
+#conDetail form{width:600px;margin:60px auto;}
+#conDetail form .repairTxt{height:45px;width:100%;text-align:center;}
+#conDetail form .repairTxt span{display:inline;width:50%;font-size:14px;}
+#conDetail form .repairTxt input{height:30px;line-height:30px;display:inline;width:30%;}
+#conDetail form .repairSub input{display:block;height:30px;line-height:30px;background:#112663;color:white;font-size:bold;width:120px;margin:20px auto;}
+
+/******************publicInro conDetail********************/
+#conDetail .passageTit,.passageType{width:80%;margin:20px auto;}
+#conDetail .passageTit h3,.passageType h3{font-size:15px;width:100%;border-bottom:1px solid #F0F0F0;}
+#conDetail .passageTit input{width:80%;height:25px;line-height:25px;}
+#conDetail .passageType p input{display:inline;}
+#conDetail .passageCon{font-size:14px;padding:5px;display:block;min-height:300px;width:80%;margin:0 auto;height:auto;border:1px solid #d8d8d8;}
+#conDetail .publicSub{width:100%;margin:30px auto;}
+#conDetail .publicSub input{color:white;font-weight:bold;background:#112663;display:block;width:120px;height:30px;margin:auto;}

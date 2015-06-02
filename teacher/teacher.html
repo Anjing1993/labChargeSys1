@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>教师主页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../css/base.css" rel="stylesheet">
+<link href="../css/manager.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/oplab.js"></script>
+</head>
+<body>
+    <div id="headPic">
+    	<img id="titimg" src="../images/headpic.png">
+    </div>
+    <!-----------------顶部导航栏------------------>
+    <div id="nav">
+    	<ul class="tit">
+    		<li><a href="##">退出</a></li>
+    		<li><a href="../order/orderoneTotwo.html">预约</a></li>
+    		<li><a href="../index.html">首页</a></li>
+    	</ul>
+    </div>
+    <!---------------------内容部分---------------------->
+    	<div id="content">
+        <!------------------左边栏菜单-------------------->
+    		<div id="conMenu">
+                <ul >
+                    <li ><a class="active" href="teacher.html">我的课程表</a></li>
+                    <li><a href="#TalreadyOrder">已预约</a></li>
+				            <li ><a href="#TbreakRepair">故障报修</a></li>
+                    <li><a href="#TpersonMess">个人信息</a></li>
+                    
+
+                </ul>      
+            </div>
+            <!----------------右边内容-------------------------->
+            <div id="conDetail">
+               <table   align="center"   bgcolor="#DDDDDD"  cellspacing="1">
+                   <thead >
+                       <tr> 
+                           <th>课程名称</th>
+                           <th>上课时间</th>
+                           <th>上课地点</th>
+                          
+                        </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           
+
+                       </tr>
+                   </tbody>
+               </table>
+
+            </div>
+    	</div>
+    </div>
+</body>
+<!-----------------利用ajax调入页面---------------->
+<script type="text/javascript">
+     $(document).ready(function(){
+        var index={
+            init:function(){
+                this.bindEvent();
+            },
+            bindEvent:function(){
+                window.onhashchange=function(){
+                    var hash=window.location.hash;
+                    console.log(hash);
+                    hash=hash.substr(1);
+                   
+                    $.ajax({
+                        url:hash+'.html',
+                        dataType:'html',
+                        success:function(data){
+                             $("#conDetail").html(data);
+
+                        },
+                        error:function(){
+                            console.log('load widget fail')
+                        }
+                    })
+               }
+            }
+        }
+        index.init();
+    })
+</script>
+</html>

@@ -1,0 +1,47 @@
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-24 17:05:11
+ * @version $Id$
+ */
+#nav{width:1024px;margin:0 auto;}
+#nav .tit{width:100%;height:30px;line-height:30px;border-bottom: 1px solid #3c3c3c;}
+#nav .tit li{background:#112663;margin-left:10px;border-top-left-radius:5px;border-top-right-radius:5px;font-weight:bold;float:right;width:100px;text-align:center;display: inline;}
+#nav .tit li a{display: inline-block;color:white;font-size:15px;}
+
+/***content***/
+#content{width:1024px;margin: 0 auto;overflow: hidden;min-height: 300px;}
+/***conMenu***/
+#time{width:20%;height:60px;}
+#time p {font-size:18px;width:205px;line-height: 60px;text-align: center;}
+#time p select{margin:0 5px;display:inline-block;width:80px;height:30px;line-height:30px;border:1px solid #d8d8d8;border-radius: 5px;}
+#conMenu{width:20%;float:left;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conMenu ul li{display:inline;height:60px;}
+#conMenu ul .active{background:blue;}
+#conMenu ul li a{font-size:14px;font-weight:bold;color:white;background:#112663;border-bottom:1px solid white;display:inline-block;width:100%;height:50px;line-height:50px;text-align: center;}
+#personM{width:100%;height: 90px;margin-top:50px;}
+#personM p{font-size:14px;height:30px;line-height:30px;margin:10px 0 0 0;}
+/***condetail**/
+#conDetail{width:819px;float:left;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conDetail table {width:100%;}
+#conDetail table thead tr th{width:30%;height:30px;line-height:30px;border:1px solid #eee;font-size: 14px; color: #404040; background: #eaeaea; }
+#conDetail table tbody tr td{text-align:center;width:20%;height:30px;line-height:30px;color: #404040;font-size: 14px;background:white;}
+#conDetail{width:819px;float:right;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conDetail table {width:100%;}
+#conDetail table thead tr th{ width:20%;}
+#conDetail table thead th a{display:block;color:#3c3c3c;text-decoration: none;height:50px;line-height:50px;font-size: 14px; color: #404040; background: #eaeaea;}
+#conDetail table thead th .act{background:#d8d8d8;}
+/**************实验室信息**************/
+.labcon{height:auto;min-height: 100px;width:200px;margin:0 0 0 30px;float:left;}
+#lablist{width:90%;margin:20px auto;height:auto;}
+#lablist h2{font-size:14px;width:200px;height:30px;border-bottom:1px dashed #3c3c3c;line-height:20px;text-align: center;}
+.labClass{width:100%;height:auto;min-height: 130px;}
+.labClass p{margin:10px 0 0 0;cursor:pointer;width:20%;height:20px;line-height:20px;text-align: center;float: left;}
+.occupy{color:black;}
+.empty{color:red;}
+/************选择教室时的弹出层***********/
+#pop{display:none;position:fixed;top:0;left;left:0;right:0;height:100%;wodth:100%;z-index:9999;background:black;filter:(alpha:30);opacity:0.3;}
+#notAllow,#Allow{display:none;border-radius:5px;width:350px;height:170px;background:#0000B3;position:absolute;z-index:100000;}
+#notAllow p,#Allow p{margin:15px 0;text-align:center;font-size:16px;position:relative;z-index:999999999999999;width:100%;height:30px;line-height:30px;color:white;}
+#notAllow input,#Allow input{margin:auto;display: block;text-align: center;width:90px;height:30px;line-height: 30px;}
+#Allow p span{display:inline-block;color:white;}

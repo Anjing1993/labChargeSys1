@@ -1,0 +1,34 @@
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-24 17:05:11
+ * @version $Id$
+ */
+ *{padding:0;margin:0;}
+#nav{width:1024px;margin:0 auto;}
+#nav .tit{width:100%;height:30px;line-height:30px;}
+#nav .tit li{background:#112663;margin-left:10px;border-top-left-radius:5px;border-top-right-radius:5px;font-weight:bold;float:right;width:100px;text-align:center;display: inline;}
+#nav .tit li a{display: inline-block;color:white;font-size:15px;}
+
+/***content***/
+#content{width:1024px;margin: 0 auto;overflow: hidden;min-height: 300px;}
+ #form1{width:1022px;height:50px;border:1px solid #3c3c3c;line-height:50px;}
+ #form1 div{width:25%;float: left;}
+ #form1 div input{height:30px;width:120px;margin:auto;}
+ #form1 div span{margin:0 5px 0 5px;}
+#btn{dispaly:block;color:white;width:120px;background:blue;}
+select{height:30px;width:120px;margin:auto;}
+#classroomMess{margin-bottom: -90000px;padding-bottom:90000px;width: 1022px;height: auto;overflow:hidden;min-height: 50px;border:1px solid #3c3c3c;border-top:none;}
+#classroomMess p{width:50px;text-align:center;padding: 5px;float:left;}
+#classroomInro{width: 1022px;height: auto;min-height: 200px;border:1px solid #3c3c3c;}
+#classroomInro div{width: 1022px;height: auto;min-height: 200px;line-height:30px;padding:5px;text-indent: 2em;}
+
+/*弹出层*/
+/************选择教室时的弹出层***********/
+#pop{display:none;position:fixed;top:0;left;left:0;right:0;height:100%;wodth:100%;z-index:9999;background:black;filter:(alpha:30);opacity:0.3;}
+#notAllow,#Allow{display:none;border-radius:5px;width:350px;height:200px;background:#0000B3;position:absolute;left:40%;top:200px;z-index:100000;}
+#notAllow p,#Allow p{margin:15px 0;text-align:center;font-size:16px;position:relative;z-index:999999999999999;width:100%;height:30px;line-height:30px;color:white;}
+#notAllow input,#Allow input{margin:auto;display: block;text-align: center;width:90px;height:30px;line-height: 30px;}
+#Allow p span{display:inline-block;color:white;}
+.occupy{color:red;}
+.empty{color:black;}

@@ -1,0 +1,24 @@
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-05-24 01:50:06
+ * @version $Id$
+ */
+ /*nav*/
+#nav{width:1024px;margin:0 auto;}
+#nav .tit{width:100%;height:30px;line-height:30px;border-bottom: 1px solid #3c3c3c;}
+#nav .tit li{background:#112663;margin-left:10px;border-top-left-radius:5px;border-top-right-radius:5px;font-weight:bold;float:right;width:100px;text-align:center;display: inline;}
+#nav .tit li a{display: inline-block;color:white;font-size:15px;}
+
+/***content***/
+#content{width:1024px;margin: 0 auto;overflow: hidden;min-height: 300px;}
+/***conMenu***/
+#conMenu{width:20%;float:left;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conMenu ul li{display:inline;}
+#conMenu ul .active{background:blue;}
+#conMenu ul li a{font-size:14px;font-weight:bold;color:white;background:#112663;border-bottom:1px solid white;display:inline-block;width:100%;height:35px;line-height:35px;text-align: center;}
+/***condetail**/
+#conDetail{width:819px;float:left;overflow:auto;height:auto;margin-bottom: -90000px;padding-bottom:90000px;}
+#conDetail table {width:100%;}
+#conDetail table thead tr th{width:30%;height:30px;line-height:30px;border:1px solid #eee;font-size: 14px; color: #404040; background: #eaeaea; }
+#conDetail table tbody tr td{text-align:center;width:20%;height:30px;line-height:30px;color: #404040;font-size: 14px;background:white;}
